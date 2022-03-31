@@ -1,58 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hangman</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1 class="main-title">Hangman</h1>
-    <section class="buttons first">
-        <button class="alphabet">A</button>
-        <button class="alphabet">B</button>
-        <button class="alphabet">C</button>
-        <button class="alphabet">D</button>
-        <button class="alphabet">E</button>
-        <button class="alphabet">F</button>
-        <button class="alphabet">G</button>
-        <button class="alphabet">H</button>
-        <button class="alphabet">I</button>
-        <button class="alphabet">J</button>
-        <button class="alphabet">K</button>
-        <button class="alphabet">L</button>
-    </section>
-    <section class="buttons second">
-        <button class="alphabet">M</button>
-        <button class="alphabet">N</button>
-        <button class="alphabet">O</button>
-        <button class="alphabet">P</button>
-        <button class="alphabet">Q</button>
-        <button class="alphabet">R</button>
-        <button class="alphabet">S</button>
-        <button class="alphabet">T</button>
-        <button class="alphabet">U</button>
-        <button class="alphabet">V</button>
-        <button class="alphabet">W</button>
-        <button class="alphabet">X</button>
-        <button class="alphabet">Y</button>
-        <button class="alphabet">Z</button>
-    </section>
 
-    <section id="image">
-        <img src="./assets/hangman0.png" alt="hangman">
-    </section>
-    <!-- Here will display some hint for user with underline -->
-    <section id="clue">
-        <p>______</p>
-    </section>
-    <!-- This message will display when the user lose -->
-    <section id="game-over">
-        <p>Game Over!</p>
-    </section>
+<head>
+  <meta charset="utf-8">
+  <link href="style.css" rel="stylesheet">
+  <title>Hangman</title>
+</head>
+
+<body>
+  <h1>Hangman</h1>
+  <section id="letters">
+    <div id="A">A</div>
+    <div id="B">B</div>
+    <div id="C">C</div>
+    <div id="D">D</div>
+    <div id="E">E</div>
+    <div id="F">F</div>
+    <div id="G">G</div>
+    <div id="H">H</div>
+    <div id="I">I</div>
+    <div id="J">J</div>
+    <div id="K">K</div>
+    <div id="L">L</div>
+    <div id="M">M</div>
+    <div id="N">N</div>
+    <div id="O">O</div>
+    <div id="P">P</div>
+    <div id="Q">Q</div>
+    <div id="R">R</div>
+    <div id="S">S</div>
+    <div id="T">T</div>
+    <div id="U">U</div>
+    <div id="V">V</div>
+    <div id="W">W</div>
+    <div id="X">X</div>
+    <div id="Y">Y</div>
+    <div id="Z">Z</div>
+  </section>
+
+  <section id="image">
+    <img src="assets/hangman0.png" alt="hangman">
+  </section>
+
+  <!-- Here you will display the hint for the message. Use an underscore for each letter and a space fo a space. -->
+  <section id="clue">
+    <p>________</p>
+  </section>
+
+  <!-- Show this message at the end of the game and reset the game. -->
+  <section id="gameover">
+    <p>Game Over</p>
+  </section>
+
 </body>
 
-<script src="script.js"></script>
+<script src="script.js" defer></script>
 
 </html>
